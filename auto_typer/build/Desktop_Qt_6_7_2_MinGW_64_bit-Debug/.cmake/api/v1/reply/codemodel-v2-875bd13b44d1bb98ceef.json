@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-d5416cbd3885d39db89a.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "auto_typer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "auto_typer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto_typer-Debug-fd4237cd9cdc0cbe5e5a.json",
+					"name" : "auto_typer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "auto_typer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto_typer_autogen-Debug-19573957741455aa10dd.json",
+					"name" : "auto_typer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "auto_typer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-auto_typer_autogen_timestamp_deps-Debug-d75ef0110ed8e3cb5086.json",
+					"name" : "auto_typer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "D:/ProGaming/auto_typer_cpp/auto_typer/build/Desktop_Qt_6_7_2_MinGW_64_bit-Debug",
+		"source" : "D:/ProGaming/auto_typer_cpp/auto_typer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
