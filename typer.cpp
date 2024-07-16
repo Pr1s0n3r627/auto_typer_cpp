@@ -1,8 +1,7 @@
 #include <windows.h>
 #include <iostream>
 #include <string>
-#include <thread>
-#include <chrono>
+
 void simulateKeystroke(char key) {
     // Create a keydown input event
     INPUT input;
@@ -22,23 +21,19 @@ void simulateKeystroke(char key) {
     // Send the keyup event
     SendInput(1, &input, sizeof(INPUT));
 }
+
 void typeString(const std::string &text, int delay) {
     for (char c : text) {
         simulateKeystroke(c);
-        std::this_thread::sleep_for(std::chrono::milliseconds(delay));
+        Sleep(delay);
     }
 }
+
 int main() {
-    std::string text;
-    int delay;
+    std::string text = "QWERTYUIOPASDFGHJKLZXCVBNM\n!@#$%^&*()_+1234567890-=[]{};':,.<>/?";
+    int delay = 10;
 
-    std::cout << "Enter the text you want to type: ";
-    std::getline(std::cin, text);
-
-    std::cout << "Enter delay between keystrokes (in milliseconds): ";
-    std::cin >> delay;
-
-    std::this_thread::sleep_for(std::chrono::seconds(5)); // Give the user 5 seconds to focus the target window
+    Sleep(5000); // Give the user 5 seconds to focus the target window
 
     typeString(text, delay);
 
